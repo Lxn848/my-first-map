@@ -11,7 +11,7 @@
     body {
       margin: 0;
       padding: 0;
-    
+    }
 
     img {
       width: 200px;
@@ -61,6 +61,7 @@
               "properties": {
                 'name': "my first summer internship",
                 'description': "this program i did was about first generation healing cicrles",
+                'image':"img/peace.png"
               }
             },
             {
@@ -72,6 +73,7 @@
               "properties": {
                 'name': "my 2nd summer intership",
                 'description': "this was my first intership i did online it was fun reading to kids ",
+                'image':"img/reading.png"
               }
             },
             {
@@ -83,6 +85,7 @@
               "properties": {
                 'name': "my 3rd summer intership",
                 'description': "this intership was in a big warehouse",
+                'image':"img/warehouse.png"
               }
             }
           ]
@@ -107,12 +110,12 @@
           const coordinates = e.feature.geometry.coordinates.slice();
           const name = e.feature.properties.name;
           const description = e.feature.properties.description;
-          // const image = e.feature.properties.image;
+          const image = e.feature.properties.image;
 
           new mapboxgl.Popup()
             .setLngLat(coordinates)
             .setHTML("<strong>" + name + "</strong><br/>" + description)
-            // .setHTML("<img src='" + image + "'><br><strong>" + name + "</strong><br/>" + description)
+            .setHTML("<img src='" + image + "'><br><strong>" + name + "</strong><br/>" + description)
             .addTo(map);
         }
       });
