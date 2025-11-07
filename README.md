@@ -36,6 +36,10 @@ To build this app, I used the following tools:
 5.  https://trello.com/ this is how  it takes users to my README on your GitHub repository
 
 ## Feature Spotlight
+i watched this video [https://www.youtube.com/watch?v=a8CwpGARAsQ] to learn how to do my banner.One feature I’m proud of is the banner thats the users can see for my title. 
+
+
+
 
 ## Contributions
 
